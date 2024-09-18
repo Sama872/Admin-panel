@@ -22,7 +22,7 @@ function registration() {
   };
   registrationArray.push(registrationData);
   localStorage.setItem("allUsers", JSON.stringify(registrationArray));
-  window.location.href = "../pages/login.html";
+  window.location.href = "/pages/login.html";
   console.log(registrationArray);
 }
 
@@ -43,7 +43,7 @@ function Login() {
     (user) => user.name === logedData.name && user.pass === logedData.pass
   );
   if (userFound) {
-    window.location.href = "../pages/articles.html";
+    window.location.href = "/pages/articles.html";
   } else {
     window.alert("invaled user name or password");
   }
